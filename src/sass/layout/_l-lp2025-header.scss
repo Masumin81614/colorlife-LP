@@ -1,0 +1,19 @@
+@use "../global"as *;
+
+.l-lp2025-header__logo {
+    padding-top: rclamp(16, 44, 375, 1023);
+    padding-inline: rclamp(37, 100, 375, 1023);
+
+    span {
+        color: transparent;
+        width: 0;
+        height: 0;
+        display: block;
+    }
+}
+
+.l-lp2025-header__nav {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

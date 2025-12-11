@@ -1,0 +1,75 @@
+@use "../global"as *;
+
+.p-lp2025-specialPrice {
+    background: linear-gradient(178deg, #DDF3F5 -14.6%, #FFF 89.02%);
+}
+
+.p-lp2025-specialPrice__inner {
+    position: relative;
+    padding-top: rclamp(28, 75, 375, 1023);
+    padding-bottom: rclamp(64, 175, 375, 1023);
+}
+
+.p-lp2025-specialPrice__thumbnail {
+    position: absolute;
+    bottom: 0;
+    left: rclamp(-25, -67, 375, 1023);
+    max-width: rclamp(148, 404, 375, 1023);
+    aspect-ratio: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.p-lp2025-specialPrice__textBox {
+    padding-inline: rclamp(27, 74, 375, 1023);
+}
+
+.p-lp2025-specialPrice__textBox__heading {
+    font-size: rclamp(12, 33, 375, 1023);
+    color: $pink-color;
+    text-align: center;
+    position: relative;
+
+    span {
+        font-size: rclamp(20, 55, 375, 1023);
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: rclamp(31, 85, 375, 1023);
+        background: $pink-color;
+        bottom: -3px;
+
+    }
+
+    &::before {
+        transform: rotate(-15deg);
+        left: rclamp(12, 21, 375, 1023);
+    }
+
+    &::after {
+        transform: rotate(15deg);
+        right: rclamp(12, 21, 375, 1023);
+    }
+}
+
+.p-lp2025-specialPrice__textBox--text {
+    margin-top: rclamp(21, 57, 375, 1023);
+    font-size: rclamp(18, 48, 375, 1023);
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.p-lp2025-specialPrice__button {
+    padding-left: rclamp(118, 321, 375, 1023);
+    padding-top: rclamp(43, 117, 375, 1023);
+}

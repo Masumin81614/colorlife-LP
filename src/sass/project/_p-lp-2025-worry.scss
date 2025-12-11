@@ -1,0 +1,23 @@
+@use "../global"as *;
+
+.l-lp2025-worry {
+    background: url(../img/bg_worry.webp) center / cover no-repeat;
+}
+
+.p-lp-2025-worry__inner {
+    padding-top: rclamp(5, 14, 375, 1023);
+}
+
+.p-lp-2025-worry__contents--head {
+    border-right: 5px solid #696464;
+    border-bottom: 5px solid #696464;
+    width: 90%;
+    padding-right: rclamp(45, 121, 375, 1023);
+
+}
+
+.p-lp-2025-worry__contents--heading {
+    color: #696464;
+    font-size: rclamp(18, 49, 375, 1023);
+    white-space: nowrap;
+}

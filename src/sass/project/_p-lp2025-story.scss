@@ -1,0 +1,55 @@
+@use "../global"as *;
+
+.l-lp2025-story {
+    background: rgba(251, 221, 215, 0.20);
+}
+
+.p-lp2025-story__inner {
+    padding-bottom: rclamp(51, 139, 375, 1023);
+}
+
+.p-lp2025-story__head {
+    background: linear-gradient(90deg, #FBDDD7 0%, #F9A9C1 31.73%, #F875AA 100%);
+    padding-top: rclamp(19, 52, 375, 1023);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: rclamp(35, 95, 375, 1023);
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+        width: 100%;
+        background: linear-gradient(90deg, #FBDDD7 0%, #F9A9C1 31.73%, #F875AA 100%);
+        left: 0;
+        bottom: rclamp(-35, -95, 375, 1023);
+    }
+}
+
+.p-lp2025-story__heading {
+    font-family: Montserrat;
+    font-size: rclamp(24, 65, 375, 1023);
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+}
+
+.p-lp2025-story__textBox {
+    padding-top: rclamp(52, 142, 375, 1023);
+    display: flex;
+    flex-direction: column;
+    gap: rclamp(14, 38, 375, 1023);
+}
+
+.p-lp2025-story__text {
+    padding-inline: rclamp(5, 14, 375, 1023);
+    font-size: rclamp(10, 27, 375, 1023);
+    color: #696464;
+}
+
+.p-lp2025-story__text--emphasis {
+    margin-top: rclamp(25, 68, 375, 1023);
+    padding-inline: rclamp(9, 23, 375, 1023);
+    color: $pink-color;
+    font-size: rclamp(20, 55, 375, 1023);
+    font-weight: 700;
+}

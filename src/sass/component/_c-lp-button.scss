@@ -1,0 +1,43 @@
+@use "../global"as *;
+
+.c-lp2025-button {
+    border-radius: 100px;
+    color: $white;
+    display: block;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.25);
+    display: flex;
+    gap: rclamp(14, 38, 375, 1023);
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.lp2025-btn-large {
+    padding-inline: rclamp(13, 82, 375, 1023);
+    padding-block: rclamp(23, 63, 375, 1023);
+    font-size: rclamp(25, 62, 375, 1023);
+    text-align: center;
+    font-weight: 600;
+
+    i {
+        display: none;
+
+        @include mq(tb-middle) {
+            display: block;
+        }
+    }
+}
+
+.lp2025-btn-middle {
+    max-width: rclamp(230, 627, 375, 1023);
+    padding-block: rclamp(10, 27, 375, 1023);
+
+}
+
+.lp2025-blue-btn {
+    background: linear-gradient(180deg, #A1C4FD 30%, #C2E9FB 100%);
+}
+
+.lp2025-pink-btn {
+    background: linear-gradient(180deg, #FF9A9E 30%, #FECFEF 100%);
+}
