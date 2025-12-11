@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as global;
 @use "sass:map";
 
 //メディアクエリ用のmixinを定義。デフォルト値はsp

@@ -1,0 +1,33 @@
+@use "../global"as *;
+
+.u--pc {
+    display: none;
+
+    @include mq(tb-middle) {
+        display: block;
+    }
+}
+
+.u--sp {
+    display: block;
+
+    @include mq(tb-middle) {
+        display: none;
+    }
+}
+
+.u-hidden-pc {
+    display: block;
+
+    @include mq(tb-middle) {
+        display: none;
+    }
+}
+
+.u-hidden-sp {
+    display: none;
+
+    @include mq(tb-middle) {
+        display: block;
+    }
+}

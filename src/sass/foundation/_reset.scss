@@ -1,5 +1,4 @@
-@use "../global/variables" as global;
-@use "../global/mixin" as mixin;
+@use "../global"as *;
 
 /* box-sizing: border-box;を設定 */
 *,
@@ -30,9 +29,13 @@ dd {
 }
 
 /* リストのスタイルを削除、これはデフォルトのスタイルが削除されることを示唆します */
-ul[role="list"],
-ol[role="list"] {
+ul,
+ol {
   list-style: none;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 /* bodyのデフォルトを設定 */
@@ -61,9 +64,13 @@ h4 {
 }
 
 /* classを持たないa要素はデフォルトのスタイルを継承 */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
+a {
+  text-decoration: none;
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
 }
 
 /* 画像の扱いを簡単にする */
