@@ -1,0 +1,5 @@
+@use "../global"as *;
+
+.p-lp2025-result__inner {
+    padding-top: rclamp(60, 164, 375, 1023);
+}

@@ -1,0 +1,43 @@
+@use "../global"as *;
+
+.l-lp2025-kaiketsu {
+    background: url(../img/bg_kaiketsu.webp) left top / cover no-repeat;
+    margin-top: rclamp(-55, -150, 375, 1023);
+    padding-top: rclamp(68, 186, 375, 1023);
+}
+
+.p-lp2025-kaiketsu__heading {
+    padding-inline: rclamp(22, 60, 375, 1023);
+    color: $pink-color;
+    text-shadow: 3px 6px 5px #FFF;
+    font-size: rclamp(24, 65, 375, 1023);
+    font-weight: 700;
+}
+
+.p-lp2025-kaiketsu__contents {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.p-lp2025-kaiketsu__image {
+    display: flex;
+    justify-content: center;
+    margin-top: rclamp(13, 34, 375, 1023);
+
+    img {
+        width: rclamp(207, 565, 375, 1023);
+        height: auto;
+    }
+}
+
+.p-lp2025-kaiketsu__textBox {
+    padding-left: rclamp(17, 45, 375, 1023);
+    margin-top: rclamp(37, 100, 375, 1023);
+}
+
+.p-lp2025-kaiketsu__text {
+    font-family: Montserrat, "Noto Sans JP";
+    font-size: rclamp(12, 33, 375, 1023);
+    font-weight: 700;
+    color: $font-light-color;
+}

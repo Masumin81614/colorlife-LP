@@ -1,0 +1,44 @@
+@use "../global"as *;
+
+.p-lp2025-footer {
+    background: url(../img/bg_footer-sp.webp) center / cover no-repeat;
+}
+
+.p-lp2025-footer__inner {
+    padding-top: rclamp(48, 130, 375, 1023);
+    padding-bottom: rclamp(40, 109, 375, 1023);
+    padding-inline: rclamp(23, 61, 375, 1023);
+}
+
+.p-lp2025-footer__lead {
+    color: $white;
+    font-size: rclamp(16, 44, 375, 1023);
+}
+
+.p-lp2025-footer__head {
+    margin-top: rclamp(54, 146, 375, 1023);
+    margin-bottom: rclamp(38, 104, 375, 1023);
+    color: $white;
+    font-size: rclamp(20, 55, 375, 1023);
+    text-wrap: nowrap;
+}
+
+.p-lp2025-footer__btn {
+    .lp2025-btn-large {
+        padding-inline: rclamp(14, 37, 375, 1023);
+        padding-block: rclamp(20, 55, 375, 1023);
+        font-size: rclamp(24, 65, 375, 1023);
+    }
+}
+
+.p-lp2025-copylight {
+    padding-top: rclamp(35, 95, 375, 1023);
+    padding-bottom: rclamp(14, 37, 375, 1023);
+    text-align: center;
+
+    small {
+        color: $font-light-color;
+        font-size: rclamp(15, 27, 375, 1023);
+        font-weight: 300;
+    }
+}
