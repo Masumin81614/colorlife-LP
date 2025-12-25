@@ -1,0 +1,109 @@
+@use "../global"as *;
+
+.p-lp2025-flow {}
+
+.p-lp2025-flow__inner {
+    background: url(../img/bg_flow.webp) center / cover no-repeat;
+    padding-top: rclamp(55, 150, 375, 1023);
+    padding-bottom: rclamp(28, 75, 375, 1023);
+    padding-inline: rclamp(50, 136, 375, 1023);
+}
+
+.p-lp2025-flow__head {
+    font-size: rclamp(32, 87, 375, 1023);
+    text-align: center;
+    color: $pink-color;
+}
+
+.p-lp2025-flow-boxes {
+    margin-top: rclamp(24, 65, 375, 1023);
+}
+
+.p-lp2025-flow-box {
+    display: flex;
+    gap: rclamp(15, 41, 375, 1023);
+    padding-inline: rclamp(14, 38, 375, 1023);
+    align-items: center;
+
+    &.flow-padding {
+        padding-top: rclamp(65, 177, 375, 1023);
+    }
+}
+
+.flow-top {
+    padding-top: rclamp(17, 45, 375, 1023);
+}
+
+.flow-bottom {
+    padding-top: rclamp(84, 228, 375, 1023);
+    padding-bottom: rclamp(20, 55, 375, 1023);
+}
+
+.p-lp2025-arrow {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        border-right: 37vw solid transparent;
+        border-left: 37vw solid transparent;
+        z-index: 5;
+    }
+
+    &.flow-arrow-pink {
+        &::after {
+            border-top: 50px solid $pink-color;
+        }
+    }
+
+    &.flow-arrow-white {
+        &::after {
+            border-top: 50px solid $white;
+        }
+    }
+}
+
+.flow-pink {
+    background: $pink-color;
+    color: $white;
+}
+
+.flow-white {
+    background: $white;
+    color: $pink-color;
+
+    &::after {
+        border-top: 50px solid $white;
+    }
+}
+
+.p-lp2025-flow-num {
+    font-size: rclamp(64, 175, 375, 1023);
+    font-weight: 900;
+
+    &.flow-num-white {
+        color: rgba(255, 255, 255, 0.40);
+    }
+
+    &.flow-num-pink {
+        color: rgba(248, 117, 170, 0.40);
+    }
+}
+
+.p-lp2025-flow-box__text {
+    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-size: rclamp(24, 65, 375, 1023);
+}
+
+.p-lp2025-flow__btn {
+    margin-top: rclamp(20, 55, 375, 1023);
+    padding-inline: rclamp(5, 14, 375, 1023);
+
+    &>.c-lp2025-button {
+        margin-inline: auto;
+    }
+}

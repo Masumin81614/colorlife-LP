@@ -6,10 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,follow" />
   <meta name="description" content="千葉県の中小企業・個人事業主様専門。集客できるホームページを安心価格で制作します。企画から制作、保守・運用までワンストップでサポート。Webの専門家があなたのビジネスを加速させます。まずはご相談ください。" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'nti6igj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.min.css" />
   <title>千葉のホームページ制作・Web集客 | HLK Corporation</title>
@@ -35,7 +66,7 @@
       <div class="p-lp2025-fv__background">
         <picture>
           <source media="(min-width: 1024px)" srcset="./img/img_fv-pc.webp" />
-          <img src="./img/img_fv-sp.webp" alt="微笑む女性2任" width="2004" height="1568" loading="lazy">
+          <img src="./img/img_fv-sp.webp" alt="微笑む女性2人" width="2004" height="1568" loading="lazy">
         </picture>
       </div>
       <div class="u--sp">
@@ -47,7 +78,7 @@
             千葉県のお店・会社・個人事業主さま専門。 <br />
             専門用語なし、安心価格、丁寧にサポート。</span>
           <div class="p-lp2025-fv__button">
-            <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-large lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>まずは無料相談してみる！</a>
+            <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-top lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>まずは無料相談してみる！</a>
           </div>
         </div>
       </div>
@@ -107,9 +138,10 @@
         <div class="p-lp-2025-worry__contents">
           <div class="p-lp-2025-worry__contents--head">
             <h2 class="p-lp-2025-worry__contents--heading">「ちゃんとしたホームページを<br class="u-hidden-pc" /> 作りたいけど・・・」</h2>
-            <span class="p-lp-2025-worry__contents--subHeading">こんな風に感じたこと、ありませんか？</span>
+            <span class="p-lp-2025-worry__contents--subHeading u-hidden-sp">こんな風に感じたこと、ありませんか？</span>
           </div>
           <div class="p-lp-2025-worry__textBox">
+            <span class="p-lp-2025-worry__contents--subHeading u-hidden-pc">こんな風に感じたこと、ありませんか？</span>
             <p class="p-lp-2025-worry__text">そもそも、いくらくらいかかるの？</p>
             <p class="p-lp-2025-worry__text">知り合いにもWebに詳しい人がいない</p>
             <p class="p-lp-2025-worry__text">専門的な話をされるとついていけるか不安・・・</p>
@@ -125,9 +157,10 @@
         </div>
       </div>
     </section>
+    <div class="l-lp2025-worry__bg"></div>
     <section class="l-lp2025-kaiketsu">
       <div class="p-lp2025-kaiketsu__inner">
-        <h2 class="p-lp2025-kaiketsu__heading">そのお悩み、すべて私たちが解決できます。</h2>
+        <h2 class="p-lp2025-kaiketsu__heading">そのお悩み、<br class="u-hidden-pc" /> すべて私たちが解決できます。</h2>
         <div class="p-lp2025-kaiketsu__contents">
           <div class="p-lp2025-kaiketsu__image">
             <img src="./img/img_kaiketsu.webp" alt="手を広げている女性" width="1214" height="1506" loading="lazy">
@@ -147,13 +180,21 @@
     </section>
     <section class="l-lp2025-reason">
       <div class="p-lp2025-reason__inner">
-        <h2 class="p-lp2025-reason__heading">HLKCorporationが選ばれる
-          <span class="p-lp2025-reason__big--heading">3</span>つの理由
-        </h2>
+        <div class="p-lp2025-reason__head u--pc">
+          <h2 class="p-lp2025-reason__heading">HLKCorporationが選ばれる
+            <span class="p-lp2025-reason__big--heading">3</span>つの理由
+          </h2>
+        </div>
+        <div class="p-lp2025-reason__head u--sp">
+          <h2 class="p-lp2025-reason__heading">HLKCorporationが選ばれる</h2>
+          <p class="p-lp2025-reason__heading--sub"><span class="p-lp2025-reason__big--heading">3</span>つの理由</p>
+        </div>
         <div class="p-lp2025-reason__boxes">
           <div class="p-lp2025-reason__box">
-            <p class="p-lp2025-reason__box--num">01</p>
-            <h3 class="p-lp2025-reason__box--title">地域密着</h3>
+            <div class="p-lp2025-reason__box--head">
+              <p class="p-lp2025-reason__box--num">01</p>
+              <h3 class="p-lp2025-reason__box--title">地域密着</h3>
+            </div>
             <div class="p-lp2025-reason__box--textBox">
               <p class="p-lp2025-reason__box--text">千葉県内の企業や個人事業主に特化<br />
                 しているからこそ、地域の課題や魅力を<br />
@@ -164,8 +205,10 @@
             </div>
           </div>
           <div class="p-lp2025-reason__box">
-            <p class="p-lp2025-reason__box--num">02</p>
-            <h3 class="p-lp2025-reason__box--title">コストを抑え<br />価値を最大化</h3>
+            <div class="p-lp2025-reason__box--head p-lp2025-reason__top">
+              <p class="p-lp2025-reason__box--num">02</p>
+              <h3 class="p-lp2025-reason__box--title">コストを抑え<br />価値を最大化</h3>
+            </div>
             <div class="p-lp2025-reason__box--textBox">
               <p class="p-lp2025-reason__box--text">固定費や余計なマージンは極力カット。<br />
                 中小企業でも導入しやすい価格で、<br />
@@ -173,9 +216,10 @@
             </div>
           </div>
           <div class="p-lp2025-reason__box">
-            <p class="p-lp2025-reason__box--num">03</p>
-            <h3 class="p-lp2025-reason__box--title">ワンストップ<br />
-              完結</h3>
+            <div class="p-lp2025-reason__box--head">
+              <p class="p-lp2025-reason__box--num">03</p>
+              <h3 class="p-lp2025-reason__box--title">ワンストップ<br /> 完結</h3>
+            </div>
             <div class="p-lp2025-reason__box--textBox">
               <p class="p-lp2025-reason__box--text">ヒアリングから納品、その後の運用・<br />
                 改善提案まで一貫してサポート。</p>
@@ -189,9 +233,9 @@
     </section>
     <section class="l-lp2025-service">
       <div class="p-lp2025-service__inner">
-        <div class="p-lp2025__head">
-          <h2 class="p-lp2025__heading">SERVICE</h2>
-          <h3 class="p-lp2025__subHeading">サービス内容</h3>
+        <div class="c-lp2025__head">
+          <h2 class="c-lp2025__heading">SERVICE</h2>
+          <h3 class="c-lp2025__subHeading">サービス内容</h3>
         </div>
         <div class="p-lp2025-service__boxes">
           <div class="p-lp2025-service__box">
@@ -209,7 +253,7 @@
             </div>
           </div>
           <div class="p-lp2025-service__box">
-            <div class="p-lp2025-service__head">
+            <div class="p-lp2025-service__head u-lp2025-flex__end">
               <h2 class="p-lp2025-service__heading">LP制作</h2>
               <h3 class="p-lp2025-service__subHeading">商品の魅力を1ページで<br />
                 しっかり伝える！</h3>
@@ -218,13 +262,13 @@
               しっかり届くLPを制作。<br />
               反応率を高める構成・デザインで、成果につながる<br />
               ページをつくります。</p>
-            <div class="p-lp2025-service__image">
+            <div class="p-lp2025-service__image u-lp2025-flex__end--image">
               <img src="./img/img_service2.webp" alt="パソコンと女性とマップやコンテンツが飛び出ているイラスト" width="707" height="707" loading="lazy">
 
             </div>
           </div>
           <div class="p-lp2025-service__box">
-            <div class="p-lp2025-service__head">
+            <div class="p-lp2025-service__head u-lp2025-flex__reverce">
               <h2 class="p-lp2025-service__heading">サポート</h2>
               <h3 class="p-lp2025-service__subHeading">公開してからが、本当のスタート。</h3>
             </div>
@@ -240,9 +284,9 @@
     </section>
     <section class="l-lp2025-result">
       <div class="p-lp2025-result__inner">
-        <div class="p-lp2025__head">
-          <h2 class="p-lp2025__heading">RESULT</h2>
-          <h3 class="p-lp2025__subHeading">実績紹介</h3>
+        <div class="c-lp2025__head">
+          <h2 class="c-lp2025__heading">RESULT</h2>
+          <h3 class="c-lp2025__subHeading">実績紹介</h3>
         </div>
         <div class="p-lp2025-result__space">
           <div class="p-lp2025-result-card">
@@ -254,58 +298,58 @@
                       <div class="p-lp2025-result-card__thumbnail">
                         <img src="./img/img_KODACHI.webp" alt="小太刀KODACHI" width="710" height="435" loading="lazy">
                       </div>
-                      <h2 class="p-lp2025-result-card__title">小太刀KODACHI</h2>
-                      <div class="p-lp2025-result-card__textBox">
-                        <p class="p-lp2025-result-card__day">制作期間：4週間</p>
-                        <p class="p-lp2025-result-card__text">不動産AIサービス　KODACHIのLPとなります。</p>
-                      </div>
-                      <div class="p-lp2025-result-card__tagBox">
-                        <span class="p-lp2025-result-card__tag">WordPress</span>
-                        <span class="p-lp2025-result-card__tag">LP</span>
+                      <div class="p-lp2025-result-card__contents">
+                        <h2 class="p-lp2025-result-card__title">小太刀KODACHI</h2>
+                        <div class="p-lp2025-result-card__textBox">
+                          <p class="p-lp2025-result-card__day">制作期間：4週間</p>
+                          <p class="p-lp2025-result-card__text">不動産AIサービス　KODACHIのLPとなります。</p>
+                        </div>
+                        <div class="p-lp2025-result-card__tagBox">
+                          <span class="p-lp2025-result-card__tag">WordPress</span>
+                          <span class="p-lp2025-result-card__tag">LP</span>
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-slide p-lp2025-result-card__swiper-slide">
                       <div class="p-lp2025-result-card__thumbnail">
                         <img src="./img/img_Voiceoath.webp" alt="ボイパス" width="691" height="418" loading="lazy">
                       </div>
-                      <h2 class="p-lp2025-result-card__title">ボイパス</h2>
-                      <div class="p-lp2025-result-card__textBox">
-                        <p class="p-lp2025-result-card__day">制作期間：4週間</p>
-                        <p class="p-lp2025-result-card__text">ボイストレーニングスクールのWEBサイトとなります。SEO対策も行いかわいいデザインとなっております。</p>
-                      </div>
-                      <div class="p-lp2025-result-card__tagBox">
-                        <span class="p-lp2025-result-card__tag">WordPress</span>
-                        <span class="p-lp2025-result-card__tag">WEBサイト</span>
+                      <div class="p-lp2025-result-card__contents">
+                        <h2 class="p-lp2025-result-card__title">ボイパス</h2>
+                        <div class="p-lp2025-result-card__textBox">
+                          <p class="p-lp2025-result-card__day">制作期間：4週間</p>
+                          <p class="p-lp2025-result-card__text">ボイストレーニングスクールのWEBサイトとなります。SEO対策も行いかわいいデザインとなっております。</p>
+                        </div>
+                        <div class="p-lp2025-result-card__tagBox">
+                          <span class="p-lp2025-result-card__tag">WordPress</span>
+                          <span class="p-lp2025-result-card__tag">WEBサイト</span>
+                        </div>
                       </div>
                     </div>
                     <div class="swiper-slide p-lp2025-result-card__swiper-slide">
                       <div class="p-lp2025-result-card__thumbnail">
                         <img src="./img/img_mysite.webp" alt="私のサイト" width="692" height="422" loading="lazy">
                       </div>
-                      <h2 class="p-lp2025-result-card__title">COLOR LIFE</h2>
-                      <div class="p-lp2025-result-card__textBox">
-                        <p class="p-lp2025-result-card__day">制作期間：3週間</p>
-                        <p class="p-lp2025-result-card__text">転職用に作成したサイトとなります。カテゴリ別に実績を表示しております。</p>
-                      </div>
-                      <div class="p-lp2025-result-card__tagBox">
-                        <span class="p-lp2025-result-card__tag">WordPress</span>
-                        <span class="p-lp2025-result-card__tag">WEBサイト</span>
+                      <div class="p-lp2025-result-card__contents">
+                        <h2 class="p-lp2025-result-card__title">COLOR LIFE</h2>
+                        <div class="p-lp2025-result-card__textBox">
+                          <p class="p-lp2025-result-card__day">制作期間：3週間</p>
+                          <p class="p-lp2025-result-card__text">転職用に作成したサイトとなります。カテゴリ別に実績を表示しております。</p>
+                        </div>
+                        <div class="p-lp2025-result-card__tagBox">
+                          <span class="p-lp2025-result-card__tag">WordPress</span>
+                          <span class="p-lp2025-result-card__tag">WEBサイト</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="black" />
-                    <path d="M7.29289 19.2929C6.90237 19.6834 6.90237 20.3166 7.29289 20.7071L13.6569 27.0711C14.0474 27.4616 14.6805 27.4616 15.0711 27.0711C15.4616 26.6805 15.4616 26.0474 15.0711 25.6569L9.41421 20L15.0711 14.3431C15.4616 13.9526 15.4616 13.3195 15.0711 12.9289C14.6805 12.5384 14.0474 12.5384 13.6569 12.9289L7.29289 19.2929ZM32 19L8 19V21L32 21V19Z" fill="white" />
-                  </svg>
+                <div class="swiper-pagination lp2025-result-pagination"></div>
+                <div class="swiper-button-prev lp2025-result-prev">
+                  <i class="fa-solid fa-angle-left"></i>
                 </div>
-                <div class="swiper-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="20" r="20" fill="black" />
-                    <path d="M32.7071 20.7071C33.0976 20.3166 33.0976 19.6834 32.7071 19.2929L26.3431 12.9289C25.9526 12.5384 25.3195 12.5384 24.9289 12.9289C24.5384 13.3195 24.5384 13.9526 24.9289 14.3431L30.5858 20L24.9289 25.6569C24.5384 26.0474 24.5384 26.6805 24.9289 27.0711C25.3195 27.4616 25.9526 27.4616 26.3431 27.0711L32.7071 20.7071ZM8 21H32V19H8V21Z" fill="white" />
-                  </svg>
+                <div class="swiper-button-next lp2025-result-next">
+                  <i class="fa-solid fa-angle-right"></i>
                 </div>
               </div>
             </div>
@@ -315,9 +359,9 @@
     </section>
     <section class="l-lp2025-price">
       <div class="p-lp2025-price__inner">
-        <div class="p-lp2025__head">
-          <h2 class="p-lp2025__heading">PRICE</h2>
-          <h3 class="p-lp2025__subHeading">料金プラン</h3>
+        <div class="c-lp2025__head">
+          <h2 class="c-lp2025__heading">PRICE</h2>
+          <h3 class="c-lp2025__subHeading">料金プラン</h3>
         </div>
         <div class="p-lp2025-price__wrapper">
           <div class="p-lp2025-price__group">
@@ -331,20 +375,22 @@
                     </span>
                     クイック
                   </h3>
-                  <p class="p-lp2025-price__price">¥55,000</p>
-                  <div class="p-lp2025-price__check">
-                    <p class="p-lp2025-price__check--text">画像ベースのコーディングのみ</p>
-                  </div>
-                  <div class="p-lp2025-price__detailBox">
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
-                      <p class="p-lp2025-price__detailTxt">無</p>
+                  <div class="p-lp2025-price-box__contents">
+                    <p class="p-lp2025-price__price">¥55,000</p>
+                    <div class="p-lp2025-price__check">
+                      <p class="p-lp2025-price__check--text">画像ベースのコーディングのみ</p>
                     </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
-                      <p class="p-lp2025-price__detailTxt">3
-                        <span>日</span>
-                      </p>
+                    <div class="p-lp2025-price__detailBox">
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
+                        <p class="p-lp2025-price__detailTxt">無</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">3
+                          <span>日</span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -354,20 +400,22 @@
                       ＼1番人気！／ </span>
                     ベーシック
                   </h3>
-                  <p class="p-lp2025-price__price">¥157,300</p>
-                  <div class="p-lp2025-price__check">
-                    <p class="p-lp2025-price__check--text">WP導入・フォーム付き</p>
-                  </div>
-                  <div class="p-lp2025-price__detailBox">
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
-                      <p class="p-lp2025-price__detailTxt">有</p>
+                  <div class="p-lp2025-price-box__contents">
+                    <p class="p-lp2025-price__price">¥157,300</p>
+                    <div class="p-lp2025-price__check">
+                      <p class="p-lp2025-price__check--text">WP導入・フォーム付き</p>
                     </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
-                      <p class="p-lp2025-price__detailTxt">14
-                        <span>日</span>
-                      </p>
+                    <div class="p-lp2025-price__detailBox">
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
+                        <p class="p-lp2025-price__detailTxt">有</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">14
+                          <span>日</span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -383,24 +431,26 @@
                     </span>
                     スターター
                   </h3>
-                  <p class="p-lp2025-price__price">¥77,000</p>
-                  <div class="p-lp2025-price__check">
-                    <p class="p-lp2025-price__check--text">最低限の構成でOKな方向け</p>
-                  </div>
-                  <div class="p-lp2025-price__detailBox">
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
-                      <p class="p-lp2025-price__detailTxt">2</p>
+                  <div class="p-lp2025-price-box__contents">
+                    <p class="p-lp2025-price__price">¥77,000</p>
+                    <div class="p-lp2025-price__check">
+                      <p class="p-lp2025-price__check--text">最低限の構成でOKな方向け</p>
                     </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最低ページ数</p>
-                      <p class="p-lp2025-price__detailTxt">6</p>
-                    </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
-                      <p class="p-lp2025-price__detailTxt">7
-                        <span>日</span>
-                      </p>
+                    <div class="p-lp2025-price__detailBox">
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">2</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最低ページ数</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">6</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">7
+                          <span>日</span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -411,23 +461,25 @@
                     </span>
                     スタンダード
                   </h3>
-                  <p class="p-lp2025-price__price">¥231,000</p>
-                  <div class="p-lp2025-price__check">
-                    <p class="p-lp2025-price__check--text">アニメーション＋スマホ対応
-                      ＋WP導入</p>
-                  </div>
-                  <div class="p-lp2025-price__detailBox">
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
-                      <p class="p-lp2025-price__detailTxt">5</p>
+                  <div class="p-lp2025-price-box__contents">
+                    <p class="p-lp2025-price__price">¥231,000</p>
+                    <div class="p-lp2025-price__check">
+                      <p class="p-lp2025-price__check--text">アニメーション＋スマホ対応
+                        ＋WP導入</p>
                     </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最低ページ数</p>
-                      <p class="p-lp2025-price__detailTxt">8</p>
-                    </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
-                      <p class="p-lp2025-price__detailTxt">21<span>日</span> </p>
+                    <div class="p-lp2025-price__detailBox">
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">5</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最低ページ数</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">8</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
+                        <p class="p-lp2025-price__detailTxt lp2025-price-day">21<span>日</span> </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -438,23 +490,25 @@
                     </span>
                     アドバンスド
                   </h3>
-                  <p class="p-lp2025-price__price">¥345,400</p>
-                  <div class="p-lp2025-price__check">
-                    <p class="p-lp2025-price__check--text">セクション数多め＋集客重視
-                      フルディレクション付き！</p>
-                  </div>
-                  <div class="p-lp2025-price__detailBox">
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
-                      <p class="p-lp2025-price__detailTxt">7</p>
+                  <div class="p-lp2025-price-box__contents">
+                    <p class="p-lp2025-price__price">¥345,400</p>
+                    <div class="p-lp2025-price__check">
+                      <p class="p-lp2025-price__check--text">セクション数多め＋集客重視
+                        フルディレクション付き！</p>
                     </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最低ページ数</p>
-                      <p class="p-lp2025-price__detailTxt">8</p>
-                    </div>
-                    <div class="p-lp2025-price__detailTxt--box">
-                      <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
-                      <p class="p-lp2025-price__detailTxt">45<span>日</span> </p>
+                    <div class="p-lp2025-price__detailBox">
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">アニメーション<br />使用数</p>
+                        <p class="p-lp2025-price__detailTxt">7</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最低ページ数</p>
+                        <p class="p-lp2025-price__detailTxt">8</p>
+                      </div>
+                      <div class="p-lp2025-price__detailTxt--box">
+                        <p class="p-lp2025-price__detail--head">最短納期(目安)</p>
+                        <p class="p-lp2025-price__detailTxt">45<span>日</span> </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -464,120 +518,133 @@
           <div class="p-lp2025-price__lead">
             <div class="p-lp2025-price__lead--inner">
               <h3 class="p-lp2025-price__lead--heading">■全プラン共通■</h3>
-              <p class="p-lp2025-price__lead--text">お見積り・相談無料 他社からの乗り換え歓迎！ 月額利用料なし<br />
-                環境構築 ／ヒアリング／サーバーアップ／Meta情報(title, descrition, OGP Favicon)の設定／品質チェック<br />
+              <p class="p-lp2025-price__lead--text">お見積り・相談無料 他社からの乗り換え歓迎！<br class="u-hidden-pc" /> 月額利用料なし<br />
+                環境構築 ／ヒアリング／サーバーアップ／<br class="u-hidden-pc" />Meta情報(title, descrition, OGP Favicon)の設定／<br class="u-hidden-pc" />品質チェック<br />
                 各種ブラウザ、レスポンシブチェック<br />
-                Zoomミーティング初回無料／メールアドレス作成・設定サポートドメイン・サーバー設定・SSL設定／<br />
+                Zoomミーティング初回無料／メールアドレス作成・<br class="u-hidden-pc" />設定サポートドメイン・サーバー設定・SSL設定／<br />
                 Slack、チャットワークなど<br />
-                Googleアナリティクス設定サポート　・納品後1ヶ月修正、不具合対応<br />
+                Googleアナリティクス設定サポート・<br class="u-hidden-pc" />納品後1ヶ月修正、不具合対応<br />
                 ご指定のチャットツールのコミュニケーション</p>
             </div>
           </div>
         </div>
         <div class="p-lp2025-price__pickup">
-          <p class="p-lp2025-price__pickup--head"></p>
+          <p class="p-lp2025-price__pickup--head">必要に応じて<br class="u-hidden-pc" />
+            オプション追加可能です！</p>
         </div>
       </div>
     </section>
-    <section class="p-lp2025-special">
+    <section class="l-lp2025-special">
       <div class="p-lp2025-special__inner">
         <div class="p-lp2025-special__head">
           <h2 class="p-lp2025-special__heading">＼ 今なら、特別価格でご案内中！ ／</h2>
           <p class="p-lp2025-special__subHeading">すべてのプランが今だけ超特価！</p>
         </div>
         <div class="p-lp2025-special__boxes">
-          <div class="p-lp2025-special__box">
-            <h3 class="p-lp2025-special__box--title">LP制作</h3>
-            <div class="p-lp2025-special__box--lead">
-              <div class="p-lp2025-special__title">クイック</div>
-              <div class="p-lp2025-special__priceBox">
-                <span class="p-lp2025-special__low">¥55,000</span>
-                <p class="p-lp2025-special__box--price">
-                  ¥44,000
-                  <span class="p-lp2025-tax">(税込)</span>
-                </p>
+          <div class="p-lp2025-special__boxes--inner">
+            <div class="p-lp2025-special__boxes--line">
+              <div class="p-lp2025-special__box">
+                <h3 class="p-lp2025-special__box--title">LP制作</h3>
+                <div class="p-lp2025-special__box--lead">
+                  <div class="p-lp2025-special__title">クイック</div>
+                  <div class="p-lp2025-special__priceBox">
+                    <span class="p-lp2025-special__low">¥55,000</span>
+                    <p class="p-lp2025-special__box--price">
+                      ¥44,000
+                      <span class="p-lp2025-tax">(税込)</span>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="p-lp2025-special__box">
-            <h3 class="p-lp2025-special__box--title">HP制作</h3>
-            <div class="p-lp2025-special__box--lead">
-              <div class="p-lp2025-special__title">スターター</div>
-              <div class="p-lp2025-special__priceBox">
-                <span class="p-lp2025-special__low">¥77,000</span>
-                <p class="p-lp2025-special__box--price">
-                  ¥66,000
-                  <span class="p-lp2025-tax">(税込)</span>
-                </p>
+              <div class="p-lp2025-special__box">
+                <h3 class="p-lp2025-special__box--title">HP制作</h3>
+                <div class="p-lp2025-special__box--lead">
+                  <div class="p-lp2025-special__title">スターター</div>
+                  <div class="p-lp2025-special__priceBox">
+                    <span class="p-lp2025-special__low">¥77,000</span>
+                    <p class="p-lp2025-special__box--price">
+                      ¥66,000
+                      <span class="p-lp2025-tax">(税込)</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="p-lp2025-special__btn">
-          <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-middle lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>無料相談してみる</a>
+          <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-large lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>無料相談してみる</a>
         </div>
       </div>
     </section>
     <section class="l-lp2025-flow">
       <div class="p-lp2025-flow">
         <div class="p-lp2025-flow__inner">
-          <div class="p-lp2025__head">
-            <h3 class="p-lp2025__subHeading">料金プラン</h3>
-          </div>
+          <h3 class="p-lp2025-flow__head">制作の流れ</h3>
           <div class="p-lp2025-flow-boxes">
-            <div class="p-lp2025-flow-box p-lp2025-arrow">
-              <p class="p-lp2025-flow-num">01</p>
-              <div class="p-lp2025-flow-box__text">お問い合わせ<br />
-                無料相談</div>
-            </div>
-            <div class="p-lp2025-flow-box p-lp2025-white p-lp2025-arrow">
-              <p class="p-lp2025-flow-num">02</p>
-              <div class="p-lp2025-flow-box__text">ヒアリング<br />
-                お見積もり</div>
-            </div>
-            <div class="p-lp2025-flow-box p-lp2025-arrow">
-              <p class="p-lp2025-flow-num">03</p>
-              <div class="p-lp2025-flow-box__text">ご契約後、<br />
-                制作スタート</div>
-            </div>
-            <div class="p-lp2025-flow-box p-lp2025-white p-lp2025-arrow">
-              <p class="p-lp2025-flow-num">04</p>
-              <div class="p-lp2025-flow-box__text">デザイン・<br />
-                コーディング</div>
-            </div>
-            <div class="p-lp2025-flow-box p-lp2025-arrow">
-              <p class="p-lp2025-flow-num">05</p>
-              <div class="p-lp2025-flow-box__text">公開・納品<br />
-                運用サポート<br />
-                もOK！</div>
+            <div class="p-lp2025-flow-boxes__inner">
+              <div class="p-lp2025-flow-box flow-pink flow-top">
+                <p class="p-lp2025-flow-num flow-num-white">01</p>
+                <div class="p-lp2025-flow-box__text">お問い合わせ<br />
+                  無料相談</div>
+              </div>
+              <div class="p-lp2025-arrow flow-arrow-pink"></div>
+              <div class="p-lp2025-flow-box flow-white flow-padding">
+                <p class="p-lp2025-flow-num flow-num-pink">02</p>
+                <div class="p-lp2025-flow-box__text">ヒアリング<br />
+                  お見積もり</div>
+              </div>
+              <div class="p-lp2025-arrow flow-arrow-white"></div>
+              <div class="p-lp2025-flow-box flow-pink flow-padding">
+                <p class="p-lp2025-flow-num flow-num-white">03</p>
+                <div class="p-lp2025-flow-box__text">ご契約後、<br />
+                  制作スタート</div>
+              </div>
+              <div class="p-lp2025-arrow flow-arrow-pink"></div>
+              <div class="p-lp2025-flow-box flow-white flow-padding">
+                <p class="p-lp2025-flow-num flow-num-pink">04</p>
+                <div class="p-lp2025-flow-box__text">デザイン・<br />
+                  コーディング</div>
+              </div>
+              <div class="p-lp2025-arrow flow-arrow-white"></div>
+              <div class="p-lp2025-flow-box flow-pink flow-bottom">
+                <p class="p-lp2025-flow-num flow-num-white">05</p>
+                <div class="p-lp2025-flow-box__text">公開・納品<br />
+                  運用サポート<br />
+                  もOK！</div>
+              </div>
             </div>
           </div>
-          <div class="p-lp2025-flow__btn">
-            <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-middle lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>無料相談してみる</a>
-          </div>
+        </div>
+        <div class="p-lp2025-flow__btn">
+          <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-large lp2025-blue-btn"><i class="fa-solid fa-caret-right"></i>無料相談してみる</a>
         </div>
       </div>
     </section>
     <section class="l-lp2025-faq">
       <div class="p-lp2025-faq">
         <div class="p-lp2025-faq__inner">
-          <div class="p-lp2025__head">
-            <h2 class="p-lp2025__heading">FAQ</h2>
-            <h3 class="p-lp2025__subHeading">よくある質問</h3>
+          <div class="c-lp2025__head">
+            <h2 class="c-lp2025__heading">FAQ</h2>
+            <h3 class="c-lp2025__subHeading">よくある質問</h3>
           </div>
           <div class="lp2025-faq__items">
-            <details class="lp2025-faq__item js-details">
+            <details class="lp2025-faq__item lp2025-js-details">
               <summary class="lp2025-js-summary">
                 <span class="lp2025-faq__question">
+                  <span class="lp2025-faq__question--title">Q.</span>
                   <span class="lp2025-faq__question-text">
-                    Webの知識が全くないのですが、大丈夫ですか？
+                    Webの知識が全くないのですが、<br class="u-hidden-pc" />大丈夫ですか？
                   </span>
                 </span>
               </summary>
               <div class="lp2025-js-content">
                 <ul class="lp2025-faq__answer">
-                  <li class="lp2025-faq__answer-text">
-                    はい、ご安心ください。専門用語を極力使わず、丁寧にご説明いたします。
+                  <li class="lp2025-faq__answer--box">
+                    <span class="lp2025-faq__title">A.</span>
+                    <p class="lp2025-faq__answer-text">
+                      はい、ご安心ください。<br class="u-hidden-pc" />専門用語を極力使わず、丁寧に<br class="u-hidden-pc" />ご説明いたします。
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -585,66 +652,82 @@
             <details class="lp2025-faq__item lp2025-js-details">
               <summary class="lp2025-js-summary">
                 <span class="lp2025-faq__question">
+                  <span class="lp2025-faq__question--title">Q.</span>
                   <span class="lp2025-faq__question-text">
-                    相談や見積もりだけでも料金はかかりますか？
+                    相談や見積もりだけでも<br class="u-hidden-pc" />料金はかかりますか？
                   </span>
                 </span>
               </summary>
-              <div class="js-content">
+              <div class="lp2025-js-content">
                 <ul class="lp2025-faq__answer">
-                  <li class="lp2025-faq__answer-text">
-                    いいえ、ご相談・お見積もりは一切無料です。お気軽にご連絡ください。
+                  <li class="lp2025-faq__answer--box">
+                    <span class="lp2025-faq__title">A.</span>
+                    <p class="lp2025-faq__answer-text">
+                      いいえ、ご相談・お見積もりは<br class="u-hidden-pc" />一切無料です。<br class="u-hidden-pc" />お気軽にご連絡ください。
+                    </p>
                   </li>
                 </ul>
               </div>
             </details>
-            <details class="faq__item js-details">
+            <details class="lp2025-faq__item lp2025-js-details">
               <summary class="lp2025-js-summary">
                 <span class="lp2025-faq__question">
+                  <span class="lp2025-faq__title">Q.</span>
                   <span class="lp2025-faq__question-text">
-                    サイト制作期間はどれくらいですか？
+                    サイト制作期間は<br class="u-hidden-pc" />どれくらいですか？
                   </span>
                 </span>
               </summary>
-              <div class="js-content">
+              <div class="lp2025-js-content">
                 <ul class="lp2025-faq__answer">
-                  <li class="lp2025-faq__answer-text">
-                    サイトの規模によりますが、ベーシックプランで2週間～、<br />
-                    スタンダードプランで約1ヶ月〜、アドバンストプランで1.5ヶ月〜が目安と<br />
-                    なります。
+                  <li class="lp2025-faq__answer--box">
+                    <span class="lp2025-faq__title">A.</span>
+                    <p class="lp2025-faq__answer-text">
+                      サイトの規模によりますが、<br class="u-hidden-pc" />ベーシックプランで2週間～、<br />
+                      スタンダードプランで約1ヶ月〜、<br class="u-hidden-pc" />アドバンストプランで1.5ヶ月〜が<br class="u-hidden-pc" />目安と<br class="u-hidden-sp" />
+                      なります。
+                    </p>
                   </li>
                 </ul>
               </div>
             </details>
-            <details class="faq__item js-details">
+            <details class="lp2025-faq__item lp2025-js-details">
               <summary class="lp2025-js-summary">
                 <span class="lp2025-faq__question">
+                  <span class="lp2025-faq__question--title">Q.</span>
                   <span class="lp2025-faq__question-text">
                     LP制作期間はどれくらいですか？
                   </span>
                 </span>
               </summary>
-              <div class="js-content">
+              <div class="lp2025-js-content">
                 <ul class="lp2025-faq__answer">
-                  <li class="lp2025-faq__answer-text">
-                    ページ数にもよりますが、ライトプランなら1日、スタンダードプランなら<br />
-                    3日が目安となります。
+                  <li class="lp2025-faq__answer--box">
+                    <span class="lp2025-faq__title">A.</span>
+                    <p class="lp2025-faq__answer-text">
+                      ページ数にもよりますが、<br class="u-hidden-pc" />ライトプランなら1日、<br class="u-hidden-pc" />スタンダードプランなら<br class="u-hidden-sp" />
+                      3日が目安となります。
+                    </p>
                   </li>
                 </ul>
               </div>
             </details>
-            <details class="faq__item js-details">
+            <details class="lp2025-faq__item lp2025-js-details">
               <summary class="lp2025-js-summary">
                 <span class="lp2025-faq__question">
+                  <span class="lp2025-faq__question--title">Q.</span>
                   <span class="lp2025-faq__question-text">
                     スマホ対応はしてもらえますか？ </span>
                 </span>
               </summary>
-              <div class="js-content">
+              <div class="lp2025-js-content">
                 <ul class="lp2025-faq__answer">
-                  <li class="lp2025-faq__answer-text">
-                    はい、すべてのプランでスマートフォン対応（レスポンシブ）を標準で<br />
-                    行っております。
+                  <li class="lp2025-faq__answer--box">
+                    <span class="lp2025-faq__title">A.</span>
+                    <p class="lp2025-faq__answer-text">
+                      はい、すべてのプランで<br class="u-hidden-pc" />スマートフォン対応（レスポンシブ）を>標準で<br class="u-hidden-sp" />
+                      行っております。
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -663,11 +746,17 @@
             私たちが、あなたのビジネスを一緒に育てていきます。<br />
             まずは、お話を聞かせてください。
           </p>
-          <h3 class="p-lp2025-footer__head"></h3>
-          <div class="p-lp2025-footer__btn">
+          <h3 class="p-lp2025-footer__head">まずはお気軽にお話してみませんか？</h3>
+          <div class="p-lp2025-footer__btn u--sp">
+            <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-large lp2025-pink-btn"><i class="fa-solid fa-caret-right"></i>無料相談・お見積もり</a>
+          </div>
+          <div class="p-lp2025-footer__btn u--pc">
             <a href="https://lin.ee/qa30pyD" class="c-lp2025-button lp2025-btn-large lp2025-pink-btn"><i class="fa-solid fa-caret-right"></i>無料相談・お見積もりはこちら</a>
           </div>
         </div>
+      </div>
+      <div class="p-lp2025-copylight">
+        <small>© 2025 HLKCorporation All Rights Reserved.</small>
       </div>
     </footer>
   </div>

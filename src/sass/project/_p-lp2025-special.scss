@@ -1,0 +1,130 @@
+@use "../global"as *;
+
+.l-lp2025-special {
+    background-color: $white;
+    position: relative;
+
+    &::after {
+        border-left: solid 25px transparent;
+        border-right: solid 25px transparent;
+        border-top: solid 25px $white;
+        bottom: rclamp(-25, -68, 375, 1023);
+        content: "";
+        display: block;
+        height: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 0;
+    }
+}
+
+.p-lp2025-special__inner {
+    padding-top: rclamp(33, 90, 375, 1023);
+    padding-bottom: rclamp(37, 100, 375, 1023);
+}
+
+.p-lp2025-special__head {
+    margin-top: rclamp(76, 207, 375, 1023);
+    text-align: center;
+}
+
+.p-lp2025-special__heading {
+    color: $pink-color;
+    font-size: rclamp(20, 55, 375, 1023);
+    font-weight: 900;
+}
+
+.p-lp2025-special__subHeading {
+    margin-top: rclamp(7, 13, 375, 1023);
+    color: $font-light-color;
+    font-size: rclamp(12, 33, 375, 1023);
+    font-weight: 700;
+}
+
+.p-lp2025-special__boxes {
+    margin-top: rclamp(36, 97, 375, 1023);
+    background: $pink-yellow-gradation;
+    padding: rclamp(9, 23, 375, 1023);
+}
+
+.p-lp2025-special__boxes--inner {
+    background: $white;
+    padding: rclamp(8, 20, 375, 1023);
+}
+
+.p-lp2025-special__boxes--line {
+    border: 1px solid;
+    border-image: $pink-yellow-gradation;
+    border-image-slice: 1;
+    padding-top: rclamp(5, 14, 375, 1023);
+    padding-left: rclamp(14, 37, 375, 1023);
+    padding-right: rclamp(15, 41, 375, 1023);
+    padding-bottom: rclamp(28, 75, 375, 1023);
+    display: flex;
+    flex-direction: column;
+    gap: rclamp(28, 75, 375, 1023);
+}
+
+.p-lp2025-special__box {
+    color: $pink-color;
+}
+
+.p-lp2025-special__box--title {
+    font-size: rclamp(24, 65, 375, 1023);
+    text-align: center;
+    font-weight: 900;
+}
+
+.p-lp2025-special__box--lead {
+    display: flex;
+    gap: rclamp(12, 33, 375, 1023);
+    margin-top: rclamp(19, 52, 375, 1023);
+
+}
+
+.p-lp2025-special__title {
+    background: $pink-color;
+    border-radius: 10px;
+    color: $white;
+    font-size: rclamp(16, 44, 375, 1023);
+    font-weight: 900;
+    padding-block: rclamp(6, 16, 375, 1023);
+    padding-inline: rclamp(13, 35, 375, 1023);
+    height: 100%;
+}
+
+.p-lp2025-special__priceBox {
+    display: flex;
+    gap: rclamp(7, 19, 375, 1023);
+    align-items: center;
+}
+
+.p-lp2025-special__low {
+    color: #1c1c1c;
+    font-family: Karla;
+    font-size: rclamp(12, 33, 375, 1023);
+    font-weight: 600;
+}
+
+.p-lp2025-special__box--price {
+    color: #E76295;
+    font-family: Roboto;
+    font-size: rclamp(24, 65, 375, 1023);
+    font-weight: 600;
+}
+
+.p-lp2025-tax {
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: rclamp(12, 33, 375, 1023);
+}
+
+.p-lp2025-special__btn {
+    margin-top: rclamp(23, 61, 1024, 1920);
+    padding-inline: rclamp(5, 14, 375, 1023);
+
+    &>.c-lp2025-button {
+        margin-inline: auto;
+    }
+}
