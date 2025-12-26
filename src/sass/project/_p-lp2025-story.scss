@@ -13,6 +13,10 @@
     padding-top: rclamp(19, 52, 375, 1023);
     position: relative;
 
+    @include mq(tb-middle) {
+        padding-top: rclamp(49, 92, 1024, 1920);
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -22,6 +26,11 @@
         background: linear-gradient(90deg, #FBDDD7 0%, #F9A9C1 31.73%, #F875AA 100%);
         left: 0;
         bottom: rclamp(-35, -95, 375, 1023);
+
+        @include mq(tb-middle) {
+            height: rclamp(123, 230, 1024, 1920);
+            bottom: rclamp(-123, -228, 1024, 1920);
+        }
     }
 }
 
@@ -31,6 +40,10 @@
     font-weight: 600;
     color: $white;
     text-align: center;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+    }
 }
 
 .p-lp2025-story__textBox {
@@ -38,12 +51,22 @@
     display: flex;
     flex-direction: column;
     gap: rclamp(14, 38, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-top: rclamp(131, 245, 1024, 1920);
+    }
 }
 
 .p-lp2025-story__text {
     padding-inline: rclamp(5, 14, 375, 1023);
     font-size: rclamp(10, 27, 375, 1023);
     color: #696464;
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(21, 40, 1024, 1920);
+        padding-inline: rclamp(57, 106, 1024, 1920);
+    }
 }
 
 .p-lp2025-story__text--emphasis {
@@ -52,4 +75,9 @@
     color: $pink-color;
     font-size: rclamp(20, 55, 375, 1023);
     font-weight: 700;
+
+    @include mq(tb-middle) {
+        padding-inline: 0;
+        text-align: center;
+    }
 }

@@ -55,34 +55,3 @@ document.querySelectorAll('.lp2025-js-details').forEach((details) => {
         }
     });
 });
-
-// swiper
-/* ▼▼▼ Swiperの初期化コードを追加 ▼▼▼ */
-const swiper = new Swiper('.p-lp2025-result-card__swiper', {
-    loop: true, // ループさせる
-    speed: 600, // 切り替えのスピード
-    slidesPerView: 1, // スマホでは1枚表示
-    spaceBetween: 20, // スライド間の余白
-    centeredSlides: true, // 真ん中に配置
-
-    // PC画面（768px以上）の設定
-    breakpoints: {
-        768: {
-            slidesPerView: 3, // PCでは3枚表示（デザインに合わせて調整してください）
-            centeredSlides: false,
-            spaceBetween: 30,
-        }
-    },
-
-    // ページネーション（下部の点々）
-    pagination: {
-        el: '.lp2025-result-pagination',
-        clickable: true,
-    },
-
-    // ナビゲーション（左右の矢印）
-    navigation: {
-        nextEl: '.lp2025-result-next',
-        prevEl: '.lp2025-result-prev',
-    },
-});

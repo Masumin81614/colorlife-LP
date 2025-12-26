@@ -16,12 +16,24 @@
         transform: translateX(-50%);
         position: absolute;
         width: 0;
+
+        @include mq(tb-middle) {
+            border-left: solid 100px transparent;
+            border-right: solid 100px transparent;
+            border-top: solid 100px $white;
+            bottom: rclamp(-51, -95, 1024, 1920);
+        }
     }
 }
 
 .p-lp2025-special__inner {
     padding-top: rclamp(33, 90, 375, 1023);
     padding-bottom: rclamp(37, 100, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-top: rclamp(81, 152, 1024, 1920);
+        padding-bottom: rclamp(107, 200, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__head {
@@ -33,6 +45,10 @@
     color: $pink-color;
     font-size: rclamp(20, 55, 375, 1023);
     font-weight: 900;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__subHeading {
@@ -40,17 +56,38 @@
     color: $font-light-color;
     font-size: rclamp(12, 33, 375, 1023);
     font-weight: 700;
+
+    @include mq(tb-middle) {
+        margin-top: rclamp(25, 46, 1024, 1920);
+        font-size: rclamp(33, 61, 1024, 1920);
+    }
+}
+
+.p-lp2025-special__contents {
+
+    @include mq(tb-middle) {
+        padding-inline: rclamp(112, 210, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__boxes {
     margin-top: rclamp(36, 97, 375, 1023);
     background: $pink-yellow-gradation;
     padding: rclamp(9, 23, 375, 1023);
+
+    @include mq(tb-middle) {
+        margin-top: rclamp(91, 170, 1024, 1920);
+        padding: rclamp(19, 35, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__boxes--inner {
     background: $white;
     padding: rclamp(8, 20, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding: rclamp(7, 13, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__boxes--line {
@@ -64,6 +101,13 @@
     display: flex;
     flex-direction: column;
     gap: rclamp(28, 75, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-top: rclamp(28, 52, 1024, 1920);
+        padding-inline: rclamp(24, 45, 1024, 1920);
+        padding-bottom: rclamp(51, 95, 1024, 1920);
+        gap: rclamp(24, 45, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__box {
@@ -74,12 +118,21 @@
     font-size: rclamp(24, 65, 375, 1023);
     text-align: center;
     font-weight: 900;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(34, 64, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__box--lead {
     display: flex;
     gap: rclamp(12, 33, 375, 1023);
     margin-top: rclamp(19, 52, 375, 1023);
+
+    @include mq(tb-middle) {
+        gap: rclamp(41, 77, 1024, 1920);
+        margin-top: rclamp(22, 41, 1024, 1920);
+    }
 
 }
 
@@ -92,12 +145,24 @@
     padding-block: rclamp(6, 16, 375, 1023);
     padding-inline: rclamp(13, 35, 375, 1023);
     height: 100%;
+
+    @include mq(tb-middle) {
+        padding-block: rclamp(17, 32, 1024, 1920);
+        padding-inline: rclamp(49, 92, 1024, 1920);
+        font-size: rclamp(19, 36, 1024, 1920);
+        width: rclamp(202, 378, 1024, 1920);
+        text-align: center;
+    }
 }
 
 .p-lp2025-special__priceBox {
     display: flex;
     gap: rclamp(7, 19, 375, 1023);
     align-items: center;
+
+    @include mq(tb-middle) {
+        gap: rclamp(33, 62, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__low {
@@ -105,6 +170,10 @@
     font-family: Karla;
     font-size: rclamp(12, 33, 375, 1023);
     font-weight: 600;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(26, 48, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__box--price {
@@ -112,12 +181,20 @@
     font-family: Roboto;
     font-size: rclamp(24, 65, 375, 1023);
     font-weight: 600;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(68, 128, 1024, 1920);
+    }
 }
 
 .p-lp2025-tax {
     color: #1c1c1c;
     font-weight: 700;
     font-size: rclamp(12, 33, 375, 1023);
+
+    @include mq(pc-middle) {
+        font-size: rclamp(13, 24, 1024, 1920);
+    }
 }
 
 .p-lp2025-special__btn {
