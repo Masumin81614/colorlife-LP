@@ -4,9 +4,6 @@
     position: relative;
 }
 
-.p-lp2025-result-card__swiper-container {
-    position: relative;
-}
 
 .c-lp2025__heading {
     color: rgba(249, 169, 193, 0.20);
@@ -14,6 +11,10 @@
     font-size: rclamp(48, 131, 375, 1023);
     font-weight: 700;
     text-align: center;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(95, 178, 1024, 1920);
+    }
 }
 
 .c-lp2025__subHeading {
@@ -24,4 +25,9 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    font-family: "Toppan Bunkyu Midashi Gothic";
+
+    @include mq(pc-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+    }
 }

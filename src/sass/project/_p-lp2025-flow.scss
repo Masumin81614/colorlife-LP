@@ -13,10 +13,21 @@
     font-size: rclamp(32, 87, 375, 1023);
     text-align: center;
     color: $pink-color;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+    }
 }
 
 .p-lp2025-flow-boxes {
     margin-top: rclamp(24, 65, 375, 1023);
+}
+
+.p-lp2025-flow-boxes__inner {
+
+    @include mq(tb-middle) {
+        display: flex;
+    }
 }
 
 .p-lp2025-flow-box {
@@ -24,6 +35,13 @@
     gap: rclamp(15, 41, 375, 1023);
     padding-inline: rclamp(14, 38, 375, 1023);
     align-items: center;
+    justify-content: center;
+
+    @include mq(tb-middle) {
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
 
     &.flow-padding {
         padding-top: rclamp(65, 177, 375, 1023);
@@ -52,6 +70,8 @@
         border-right: 37vw solid transparent;
         border-left: 37vw solid transparent;
         z-index: 5;
+
+        @include mq(tb-middle) {}
     }
 
     &.flow-arrow-pink {
@@ -85,6 +105,13 @@
     font-size: rclamp(64, 175, 375, 1023);
     font-weight: 900;
 
+    @include mq(tb-middle) {
+        font-size: rclamp(68, 128, 1024, 1920);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     &.flow-num-white {
         color: rgba(255, 255, 255, 0.40);
     }
@@ -97,6 +124,10 @@
 .p-lp2025-flow-box__text {
     font-family: "Toppan Bunkyu Midashi Gothic";
     font-size: rclamp(24, 65, 375, 1023);
+
+    @include mq(tb-middle) {
+        font-size: rclamp(26, 48, 1024, 1920);
+    }
 }
 
 .p-lp2025-flow__btn {

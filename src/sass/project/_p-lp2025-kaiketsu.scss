@@ -4,6 +4,11 @@
     background: url(../img/bg_kaiketsu.webp) left top / cover no-repeat;
     margin-top: rclamp(-55, -150, 375, 1023);
     padding-top: rclamp(68, 186, 375, 1023);
+
+    @include mq(tb-middle) {
+        margin-top: rclamp(-53, -100, 1024, 1920);
+        padding-top: rclamp(88, 165, 1024, 1920);
+    }
 }
 
 .p-lp2025-kaiketsu__heading {
@@ -12,11 +17,22 @@
     text-shadow: 3px 6px 5px #FFF;
     font-size: rclamp(24, 65, 375, 1023);
     font-weight: 700;
+
+    @include mq(tb-middle) {
+        padding-inline: 0;
+        text-align: center;
+        font-size: rclamp(43, 80, 1024, 1920);
+    }
 }
 
 .p-lp2025-kaiketsu__contents {
     display: flex;
     flex-direction: column-reverse;
+
+    @include mq(tb-middle) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .p-lp2025-kaiketsu__image {
@@ -27,12 +43,23 @@
     img {
         width: rclamp(207, 565, 375, 1023);
         height: auto;
+
+        @include mq(tb-middle) {
+            width: rclamp(324, 607, 1024, 1920);
+        }
     }
 }
 
 .p-lp2025-kaiketsu__textBox {
     padding-left: rclamp(17, 45, 375, 1023);
     margin-top: rclamp(37, 100, 375, 1023);
+
+    @include mq(tb-middle) {
+        display: flex;
+        flex-direction: column;
+        gap: rclamp(29, 55, 1024, 1920);
+        margin-block: rclamp(67, 126, 1024, 1920);
+    }
 }
 
 .p-lp2025-kaiketsu__text {
@@ -40,4 +67,8 @@
     font-size: rclamp(12, 33, 375, 1023);
     font-weight: 700;
     color: $font-light-color;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(21, 40, 1024, 1920);
+    }
 }

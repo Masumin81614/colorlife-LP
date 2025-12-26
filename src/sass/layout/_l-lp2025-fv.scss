@@ -4,6 +4,10 @@
     position: relative;
     background: rgba(251, 221, 215, 0.50);
     padding-bottom: rclamp(33, 89, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-bottom: 0;
+    }
 }
 
 
@@ -12,32 +16,70 @@
     img {
         max-width: rclamp(375, 1023, 375, 1023);
         height: 100%;
+
+        @include mq(tb-middle) {
+            max-width: 100%;
+        }
     }
 
 }
 
 .p-lp2025-fv__top--head {
-    position: absolute;
     background: rgba(255, 255, 255, 0.76);
     color: $pink-color;
     text-shadow: 2px 5px 5px #FFF;
-    top: rclamp(269, 732, 375, 1023);
     max-width: rclamp(367, 1001, 375, 1023);
     padding-block: rclamp(13, 35, 375, 1023);
     padding-inline: rclamp(28, 76, 375, 1023);
+
+    @include mq(tb-middle) {
+        font-size: rclamp(34, 64, 1024, 1920);
+        max-width: rclamp(885, 1660, 1024, 1920);
+        margin-left: rclamp(-14, -27, 1024, 1920);
+        padding-left: rclamp(37, 70, 1024, 1920);
+        padding-block: rclamp(14, 27, 1024, 1920);
+        text-wrap: nowrap;
+        margin-top: rclamp(49, 92, 1024, 1920);
+    }
 }
 
 .p-lp2025-fv__top {
     padding-inline: rclamp(8, 20, 375, 1023);
     padding-top: rclamp(13, 34, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding: 0;
+    }
+}
+
+.top__head--sp {
+    position: absolute;
+    top: rclamp(269, 732, 375, 1023);
+}
+
+
+.top__head--pc {
+    position: absolute;
+    top: rclamp(69, 130, 1024, 1920);
+    left: 0;
 }
 
 .p-lp2025-fv__top--text {
     font-size: rclamp(14, 35, 375, 1023);
     font-weight: 500;
     color: #696464;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(21, 40, 1024, 1920);
+        margin-left: rclamp(30, 57, 1024, 1920);
+    }
 }
 
 .p-lp2025-fv__button {
     margin-top: rclamp(19, 52, 375, 1023);
+
+    @include mq(tb-middle) {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -3,6 +3,10 @@
 .p-lp2025-price__inner {
     padding-top: rclamp(39, 105, 375, 1023);
     position: relative;
+
+    @include mq(tb-middle) {
+        padding-top: rclamp(78, 146, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__contents {
@@ -16,6 +20,12 @@
     color: $white;
     font-family: "toppan-bunkyu-midashi-go-std", sans-serif;
     font-weight: 900;
+
+    @include mq(tb-middle) {
+        width: rclamp(213, 400, 1024, 1920);
+        margin-left: rclamp(38, 72, 1024, 1920);
+        font-size: rclamp(34, 64, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__boxes {
@@ -25,12 +35,28 @@
     padding-inline: rclamp(38, 102, 375, 1023);
     padding-top: rclamp(30, 80, 375, 1023);
     padding-bottom: rclamp(64, 175, 375, 1023);
+
+    @include mq(tb-middle) {
+        flex-direction: row;
+        gap: rclamp(14, 27, 1024, 1920);
+        padding-inline: rclamp(13, 25, 1024, 1920);
+    }
+
+    &.price-box-pc {
+        @include mq(tb-middle) {
+            padding-inline: rclamp(184, 345, 1024, 1920);
+        }
+    }
 }
 
 .p-lp2025-price__box {
     border: 3px solid #F875AA;
     background: #FFF;
     box-shadow: 0 4px 16px 0 #FAAAC1;
+
+    @include mq(tb-middle) {
+        flex: 1;
+    }
 }
 
 
@@ -43,17 +69,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(34, 64, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__box--subHeading {
-    font-size: rclamp(2, 55, 375, 1023);
-    font-weight: 700;
     font-size: rclamp(20, 55, 375, 1023);
     font-weight: 500;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(21, 40, 1024, 1920);
+    }
+
 }
 
 .p-lp2025-price-box__contents {
     padding-inline: rclamp(15, 41, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-inline: rclamp(16, 30, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__price {
@@ -64,11 +101,27 @@
     text-align: center;
     padding-top: rclamp(22, 59, 375, 1023);
     padding-bottom: rclamp(12, 31, 375, 1023);
+
+    @include mq(tb-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+        padding-top: rclamp(23, 43, 1024, 1920);
+        padding-bottom: rclamp(14, 26, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__check {
     background: #004F9A;
     padding-block: rclamp(19, 50, 375, 1023);
+
+    @include mq(tb-middle) {
+        padding-block: rclamp(9, 16, 1024, 1920);
+        padding-inline: rclamp(5, 10, 1024, 1920);
+        height: rclamp(64, 120, 1024, 1920);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .p-lp2025-price__check--text {
@@ -76,6 +129,11 @@
     font-size: rclamp(18, 49, 375, 1023);
     font-weight: 600;
     text-align: center;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(19, 36, 1024, 1920);
+        text-align: left;
+    }
 }
 
 .p-lp2025-price__detailTxt--box {
@@ -85,6 +143,10 @@
     gap: rclamp(42, 113, 375, 1023);
     padding-block: rclamp(11, 29, 375, 1023);
     padding-inline: rclamp(10, 27, 375, 1023);
+
+    @include mq(tb-middle) {
+        gap: rclamp(37, 70, 1024, 1920);
+    }
 
     &:nth-child(n + 2) {
         position: relative;
@@ -108,13 +170,25 @@
     text-align: right;
     line-height: 1;
     font-weight: 600;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(17, 32, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__detailTxt {
     font-size: rclamp(48, 131, 375, 1023);
 
+    @include mq(tb-middle) {
+        font-size: rclamp(51, 96, 1024, 1920);
+    }
+
     span {
         font-size: rclamp(18, 49, 375, 1023);
+
+        @include mq(tb-middle) {
+            font-size: rclamp(19, 36, 1024, 1920);
+        }
     }
 }
 
@@ -131,6 +205,12 @@
     padding-top: rclamp(33, 89, 375, 1023);
     padding-bottom: rclamp(119, 325, 375, 1023);
     position: relative;
+
+    @include mq(tb-middle) {
+        padding-inline: rclamp(55, 104, 1024, 1920);
+        padding-top: rclamp(30, 56, 1024, 1920);
+        padding-bottom: rclamp(99, 185, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__lead--heading {
@@ -138,16 +218,22 @@
     font-size: rclamp(24, 65, 375, 1023);
     font-weight: 700;
     text-align: center;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(34, 64, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__lead--text {
     margin-top: rclamp(18, 49, 375, 1023);
-}
-
-.p-lp2025-price__lead--text {
     color: $font-color-second;
     font-size: rclamp(15, 41, 375, 1023);
     letter-spacing: -1px;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(19, 36, 1024, 1920);
+        margin-top: rclamp(27, 50, 1024, 1920);
+    }
 }
 
 .p-lp2025-price__pickup {
@@ -160,10 +246,21 @@
     left: 0;
     width: 100%;
     z-index: 5;
+
+    @include mq(tb-middle) {
+        bottom: rclamp(-61, -115, 1024, 1920);
+        padding-block: rclamp(35, 65, 1024, 1920);
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .p-lp2025-price__pickup--head {
     font-size: rclamp(24, 65, 375, 1023);
     color: $white;
     font-weight: 900;
+
+    @include mq(tb-middle) {
+        font-size: rclamp(34, 64, 1024, 1920);
+    }
 }

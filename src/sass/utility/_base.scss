@@ -34,4 +34,8 @@
 
 .u-lp2025-flex__end {
     align-items: flex-end;
+
+    @include mq(tb-middle) {
+        flex-direction: row-reverse;
+    }
 }
